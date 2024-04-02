@@ -1,9 +1,28 @@
 <DOCUTYPE html>
 <hrml lang = "en">
+<!-- This is an HTML comment-->
 <head>
+ <style>
+    @import "../css/mystyle.css";
+    /* Overide the background colour in the mystyle.css style sheet */
+    body {background-color:black;}
+ </style>
+<!--
+    <style>
+        body {background-color:darkslategray;}
+        h1 {color: blanchedalmond;}
+        h2 {color: blanchedalmond;}
+        div {color: orange;}
+        div {font-size: large;}
+        p {color: orange;}
+        p {font-size: large;}
+    </style>
+-->
+
     <title>
-        Index HTML File
+        New Index HTML File
     </title>
+
 </head>
 
 <body>
@@ -11,7 +30,7 @@
         This is a headding. The size is h1
     </h1>
     <p>
-        This is a parargraph. Well, well, well. Does it line wrap? LEt's try and find out. We really need a much longer line.
+        This is a parargraph. Well, well, well. Does it line wrap? Let's try and find out. We really need a much longer line.
     </p>
     <div>
         This is a division. Well, well, well. Does it line wrap? LEt's try and find out. We really need a much longer line.
@@ -35,25 +54,47 @@
         Here is a regular button which responds with "Hello World" from the page:
         <div>
             <button type="button" onclick="alert('Hello world!')">
-                Click Me!
+            Click Me!
             </button>
         </div>
     <p>
         Here is a Java Script button which responds with the date and time:
         <div>
-            <button type="button" onclick = "document.getElementById('return_date_time').innerHTML=Date()"">
+            <button type="button" onclick="document.getElementById('return_date_time').innerHTML=Date()">
                 Click me to display Date and Time
             </button>
-            <p id='return_date_time'></p>
+            <p id='return_date_time'> 
+            </p>
         </div>
     </p>
+    <p>
+        Here is another botton:
+        <div>
+            <button type="button" onclick="alert('Hello William')">
+            Say Hello!
+            </button>
+        </div>
+    <p>
+            And yet another button
+            <div>
+                <button type="button" onclick="document.innerHTML=print()">
+                    Print Page
+               </button>
+            </div>           
     <p>
         .... and now we have a new paragraph. I wonder what this will do. Maybe just start a new pararagrapn.
     </p>    
     
  
     </p>
-
 </body>
 </hrml>
+
+<script>
+    // This is a Java Script comment
+    /* Print to the browset console in developer's tools */
+    console.log("Hello William again")
+</script>
+
+
  
