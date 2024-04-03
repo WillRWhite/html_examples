@@ -2,7 +2,8 @@
 body {background-color:darkslategray;}
 h1 {color: blanchedalmond;}
 h2 {color: blanchedalmond;}
-div {color: orange;}
+div {color: rgb(255, 51, 0);}
 div {font-size: large;}
 p {color: orange;}
 p {font-size: large;}
+.button_answer {color:deepskyblue;}
